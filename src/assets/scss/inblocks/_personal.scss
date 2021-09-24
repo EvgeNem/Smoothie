@@ -1,0 +1,23 @@
+.personal {}
+
+.personal__item {
+    position: relative;
+}
+
+.personal__link {}
+
+.personal__img {}
+
+.personal__counter {
+    width: 21px;
+    height: 21px;
+    background-color: #ffffff;
+    text-align: center;
+    line-height: 2;
+    font-size: 10px;
+    font-weight: 700;
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    border-radius: 50%;
+}

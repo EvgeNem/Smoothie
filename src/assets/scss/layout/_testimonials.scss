@@ -1,0 +1,103 @@
+.testimonials {
+    background-color: #65311b;
+    padding-top: 120px;
+    padding-bottom: 63px;
+}
+
+.testimonials__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.testimonials__wrapper::after {
+    content: "";
+    background-image: url(./../images/dots_3973.png);
+    position: absolute;
+    width: 410px;
+    height: 301px;
+    top: -200px;
+    right: 58px;
+}
+
+.testimonials__wrapper::before {
+    content: "Sarah A";
+    position: absolute;
+    opacity: 0.6;
+    font-family: "MuliExtraBold", sans-serif;
+    font-size: 200px;
+    line-height: 40px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #521905;
+    top: 180px;
+    left: 330px;
+}
+
+.testimonials__box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 124px;
+}
+
+.testimonials__title {
+    text-align: center;
+}
+
+.testimonials__span {
+    color: #f2612d;
+}
+
+.testimonials__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 58px;
+    margin-top: 45px;
+}
+
+.testimonials__text {
+    max-width: 460px;
+    font-family: "MuliRegular", sans-serif;
+    font-size: 18px;
+    line-height: 35px;
+    color: #ffffff;
+    text-align: center;
+    z-index: 1;
+}
+
+.testimonials__cite {
+    font-family: "MuliSemiBoldItalic", sans-serif;
+    line-height: 45px;
+    color: #f7ae3b;
+    font-size: 17px;
+    margin-top: 4px;
+}
+
+.testimonials__img {
+    z-index: 1;
+    transition: 1s;
+    object-fit: cover;
+    max-width: 220px;
+    width: 100%;
+}
+
+.testimonials__img:hover {
+    transform: scale(2) translate(-57%);
+}
+
+.testimonials__buttons {
+    margin-top: 122px;
+    margin-right: 101px;
+    margin-bottom: 14px;
+    display: flex;
+}
+
+.testimonials__btn {
+    margin-left: 100px;
+    background: transparent;
+}
+
+.testimonials__arrow {}
