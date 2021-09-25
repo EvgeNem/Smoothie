@@ -6,12 +6,13 @@
     border-radius: 30px;
     background: transparent;
     transition: 1s;
+
+    &--green {
+        background-color: #0aa566;
+    }
+
+    &:hover {
+        transform: scale(110%);
+    }
 }
 
-.btn:hover {
-    transform: scale(110%);
-}
-
-.btn--green {
-    background-color: #0aa566;
-}
