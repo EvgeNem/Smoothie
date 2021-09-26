@@ -416,13 +416,13 @@ body {
     transition: 1s;
 }
 
+.btn--green {
+    background-color: #0aa566;
+}
+
 .btn:hover {
     -webkit-transform: scale(110%);
     transform: scale(110%);
-}
-
-.btn--green {
-    background-color: #0aa566;
 }
 
 .title {

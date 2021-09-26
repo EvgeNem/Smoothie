@@ -4,105 +4,104 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-}
 
-.header__top {
-    padding: 85px 100px 70px;
-    position: relative;
-}
+    &__top {
+        padding: 85px 100px 70px;
+        position: relative;
+    }
 
-.header__burger-btn {
-    background-image: url(./../images/square.svg);
-    background-size: cover;
-    width: 40px;
-    height: 40px;
-    border: none;
-    background-color: transparent;
-    position: fixed;
-    top: 20px;
-    right: 10px;
-    display: none;
-    z-index: 999;
-    margin-right: 10px;
-}
+    &__burger-btn {
+        background-image: url(./../images/square.svg);
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+        border: none;
+        background-color: transparent;
+        position: fixed;
+        top: 20px;
+        right: 10px;
+        display: none;
+        z-index: 999;
+        margin-right: 10px;
+    }
 
-.header__menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__nav {}
+    
+    &__logo {
+        position: absolute;
+        top: 70px;
+        left: 50%;
+        transform: translateX(-52%);
+    }
+    
+    &__right-block {
+        display: flex;
+        align-items: center;
+    }
+    
+    &__personal {
+        display: flex;
+        column-gap: 46px;
+        margin-right: 134px;
+        margin-top: 5px;
+        position: relative;
 
-.header__nav {}
+        &::after {
+            content: "";
+            background-image: url(./../images/line_2944.png);
+            width: 47px;
+            height: 2px;
+            background-color: #ffd68f;
+            position: absolute;
+            top: 50%;
+            right: -95px;
+        }
+    }
 
-.header__logo {
-    position: absolute;
-    top: 70px;
-    left: 50%;
-    transform: translateX(-52%);
-}
+    &__social {
+        display: flex;
+        column-gap: 7px;
+    }
+    
+    &__content {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    
+    &__btn {
+        font-family: "MuliBold", sans-serif;
+        width: 280px;
+        height: 70px;
+        border-radius: 35px;
+        font-size: 24px;
+        line-height: 40px;
+        letter-spacing: -0.02em;
+        color: #ffffff;
+        position: relative;
+        text-align: left;
+        padding: 0 0 0 39px;
+        transition: 1s;
 
-.header__right-block {
-    display: flex;
-    align-items: center;
-}
-
-.header__personal {
-    display: flex;
-    column-gap: 46px;
-    margin-right: 134px;
-    margin-top: 5px;
-    position: relative;
-}
-
-.header__personal::after {
-    content: "";
-    background-image: url(./../images/line_2944.png);
-    width: 47px;
-    height: 2px;
-    background-color: #ffd68f;
-    position: absolute;
-    top: 50%;
-    right: -95px;
-}
-
-
-.header__social {
-    display: flex;
-    column-gap: 7px;
-}
-
-.header__content {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-}
-
-.header__btn {
-    font-family: "MuliBold", sans-serif;
-    width: 280px;
-    height: 70px;
-    border-radius: 35px;
-    font-size: 24px;
-    line-height: 40px;
-    letter-spacing: -0.02em;
-    color: #ffffff;
-    position: relative;
-    text-align: left;
-    padding: 0 0 0 39px;
-    transition: 1s;
-}
-
-.header__btn::after {
-    content: "";
-    background-image: url(./../images/arrow__3264.png);
-    position: absolute;
-    width: 30px;
-    height: 16px;
-    top: 30px;
-    right: 40px;
-}
-
-.header__btn:hover {
-    transform: scale(110%);
-    color: black;
+        &::after {
+            content: "";
+            background-image: url(./../images/arrow__3264.png);
+            position: absolute;
+            width: 30px;
+            height: 16px;
+            top: 30px;
+            right: 40px;
+        }
+        
+        &:hover {
+            transform: scale(110%);
+            color: black;
+        }
+    }
 }
