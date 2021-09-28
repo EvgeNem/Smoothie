@@ -1,14 +1,17 @@
-.payment {}
+.payment {
 
-.payment__list {
-    max-height: 160px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-top: 33px;
+    &__list {
+        max-height: 160px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 33px;
+    }
+    
+    &__img {
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
 }
 
-.payment__img {
-    margin-right: 20px;
-    margin-bottom: 20px;
-}
+

@@ -1,15 +1,17 @@
-.information {}
+.information {
 
-.information__list {
-    margin-top: 23px;
+    &__list {
+        margin-top: 23px;
+    }
+    
+    &__item {}
+    
+    &__link {
+        font-family: "MuliBold", sans-serif;
+        font-size: 18px;
+        line-height: 35px;
+        letter-spacing: -0.02em;
+        color: #6d450c;
+    }
 }
 
-.information__item {}
-
-.information__link {
-    font-family: "MuliBold", sans-serif;
-    font-size: 18px;
-    line-height: 35px;
-    letter-spacing: -0.02em;
-    color: #6d450c;
-}
