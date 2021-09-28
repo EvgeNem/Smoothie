@@ -1,78 +1,79 @@
-.product {}
+.product {
 
-.product__wrapper {
-    display: flex;
-}
+    &__wrapper {
+        display: flex;
+    }
+    
+    &__column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    &__img {
+        margin-top: 130px;
+        margin-right: 10px;
+        transition: 1s;
+        object-fit: cover;
+        max-width: 119px;
+        width: 100%;
 
-.product__column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
 
-.product__img {
-    margin-top: 130px;
-    margin-right: 10px;
-    transition: 1s;
-    object-fit: cover;
-    max-width: 119px;
-    width: 100%;
-}
+    &__text {
+        font-family: "MuliBold", sans-serif;
+        font-size: 24px;
+        line-height: 22px;
+        color: #ffffff;
+        margin-top: 29px;
+    }
+    
+    &__span {
+        font-family: "MuliItalic", sans-serif;
+        font-size: 21px;
+        line-height: 32px;
+        color: #ffffff;
+        margin-top: 7px;
+    }
+    
+    &__btn {
+        margin-top: 55px;
+        margin-bottom: 78px;
+        width: 203px;
+        height: 63px;
+        border: 2px solid #ffffff;
+        position: relative;
+        text-align: left;
+        padding: 0 0 0 33px;
 
-.product__img:hover {
-    transform: scale(1.5);
-}
+        &::after {
+            content: "";
+            background-image: url(./../images/arrow_3139.png);
+            position: absolute;
+            width: 30px;
+            height: 16px;
+            top: 23px;
+            right: 35px;
+        }
+    }
 
-.product__text {
-    font-family: "MuliBold", sans-serif;
-    font-size: 24px;
-    line-height: 22px;
-    color: #ffffff;
-    margin-top: 29px;
-}
-
-.product__span {
-    font-family: "MuliItalic", sans-serif;
-    font-size: 21px;
-    line-height: 32px;
-    color: #ffffff;
-    margin-top: 7px;
-}
-
-.product__btn {
-    margin-top: 55px;
-    margin-bottom: 78px;
-    width: 203px;
-    height: 63px;
-    border: 2px solid #ffffff;
-    position: relative;
-    text-align: left;
-    padding: 0 0 0 33px;
-}
-
-.product__btn::after {
-    content: "";
-    background-image: url(./../images/arrow_3139.png);
-    position: absolute;
-    width: 30px;
-    height: 16px;
-    top: 23px;
-    right: 35px;
-}
-
-.product__column--chocolate {
-    background-color: #632f19;
-}
-
-.product__column--vegan {
-    background-color: #168470;
-}
-
-.product__column--lemon {
-    background-color: #faac3f;
-}
-
-.product__column--turmeric {
-    background-color: #c2481a;
+    &__column--chocolate {
+        background-color: #632f19;
+    }
+    
+    &__column--vegan {
+        background-color: #168470;
+    }
+    
+    &__column--lemon {
+        background-color: #faac3f;
+    }
+    
+    &__column--turmeric {
+        background-color: #c2481a;
+    }
 }
