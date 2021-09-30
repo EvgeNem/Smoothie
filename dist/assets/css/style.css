@@ -1,3 +1,13 @@
+.btn {
+    font-family: "MuliBold", sans-serif;
+    font-size: 21px;
+    line-height: 22px;
+    color: #ffffff;
+    border-radius: 30px;
+    background: transparent;
+    transition: 1s;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -392,7 +402,6 @@ template {
     padding: 0;
     border: 0;
     box-sizing: border-box;
-    borer: 1px solid red;
 }
 
 body {
@@ -404,16 +413,6 @@ body {
     max-width: 1740px;
     margin: 0 auto;
     padding: 0 10px;
-}
-
-.btn {
-    font-family: "MuliBold", sans-serif;
-    font-size: 21px;
-    line-height: 22px;
-    color: #ffffff;
-    border-radius: 30px;
-    background: transparent;
-    transition: 1s;
 }
 
 .btn--green {
@@ -1063,6 +1062,16 @@ body {
     position: relative;
 }
 
+.blog__container::after {
+    content: "";
+    background-image: url(./../images/line_3286.png);
+    position: absolute;
+    width: 687px;
+    height: 12px;
+    top: 170px;
+    left: 515px;
+}
+
 .blog__img {
     margin-top: 59px;
     z-index: 1;
@@ -1078,16 +1087,6 @@ body {
     -ms-flex-align: center;
     align-items: center;
     margin-top: 169px;
-}
-
-.blog__container::after {
-    content: "";
-    background-image: url(./../images/line_3286.png);
-    position: absolute;
-    width: 687px;
-    height: 12px;
-    top: 170px;
-    left: 515px;
 }
 
 .blog__article {
@@ -1218,7 +1217,7 @@ body {
     color: #ffffff;
 }
 
-.footer__information {
+.footer_information {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
