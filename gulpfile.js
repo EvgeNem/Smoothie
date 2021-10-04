@@ -19,6 +19,7 @@ const notify = require('gulp-notify'); //предоставляет информ
 const browserSync = require('browser-sync').create(); // для запуска сервера и перезагрузки страницы при внесении изменений
 
 
+
 // Пути 
 const srcPath = 'src/';
 const distPath = 'dist/';
@@ -95,7 +96,9 @@ function css(cb) {
             }
         }))
         .pipe(sass({
-            includePaths: './node_modules/'
+            includePaths: './node_modules/',
+            includePaths: require('node-normalize-scss').includePaths           
+            
         }))
         .pipe(autoprefixer({
             cascade: true
@@ -135,7 +138,8 @@ function cssWatch(cb) {
             }
         }))
         .pipe(sass({
-            includePaths: './node_modules/'
+            includePaths: './node_modules/',
+            includePaths: require('node-normalize-scss').includePaths
         }))
         .pipe(concat('style.css'))
         .pipe(rename({

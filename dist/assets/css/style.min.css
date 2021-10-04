@@ -1099,7 +1099,8 @@ body {
   .blog__wrapper {
     flex-direction: column;
     align-items: center;
-    margin-left: 20px; }
+    margin-left: 20px;
+    margin-right: 20px; }
   .blog__box {
     margin-top: 20px; }
   .blog__article {
