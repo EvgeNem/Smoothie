@@ -2,31 +2,9 @@
 
 @import './abstracts/mixins';
 
-@import './normalize';
+@import './base/normalize';
 
-@import './fonts';
-
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-    // border: 1px solid red;
-}
-
-body {
-    font-family: "MuliRegular", sans-serif;
-    font-size: 10px;
-}                                                                                                                         
-
-.container {
-    max-width: 1740px;
-    margin: 0 auto;
-    padding: 0 10px;
-}
-
+@import './base/fonts';
 
 @import './components/buttons';
 @import './components/letters';
@@ -46,4 +24,4 @@ body {
 @import './inblocks/information';
 @import './inblocks/payment';
 
-@import './media';
+@import './base/media';

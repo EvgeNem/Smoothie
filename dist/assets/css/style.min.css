@@ -14,6 +14,23 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "MuliRegular", sans-serif;
+  font-size: 10px; }
+
+.container {
+  max-width: 1740px;
+  margin: 0 auto;
+  padding: 0 10px; }
+
 html {
   line-height: 1.15;
   /* 1 */
@@ -349,23 +366,6 @@ template {
 @font-face {
   font-family: "MuliSemiBoldItalic";
   src: url(./../fonts/Muli-Semi-BoldItalic.ttf) format("truetype"); }
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box; }
-
-body {
-  font-family: "MuliRegular", sans-serif;
-  font-size: 10px; }
-
-.container {
-  max-width: 1740px;
-  margin: 0 auto;
-  padding: 0 10px; }
 
 .btn--green {
   background-color: #0aa566; }
