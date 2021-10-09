@@ -254,6 +254,7 @@
 
     .smoothies {
         padding-top: 40px;
+        padding-bottom: 30px;
     }
 
     .smoothies__title {
@@ -276,7 +277,9 @@
         width: 160px;
         height: 160px;
     }
-
+    .smoothies__wrapper {
+        margin-top: 0px;
+    }
     .about__btn {
         width: 270px;
         margin-bottom: 50px;
