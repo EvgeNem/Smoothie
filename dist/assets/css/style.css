@@ -15,6 +15,26 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "MuliRegular", sans-serif;
+    font-size: 10px;
+}
+
+.container {
+    max-width: 1740px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
 html {
     line-height: 1.15;
   /* 1 */
@@ -395,26 +415,6 @@ template {
   src: url(./../fonts/Muli-Semi-BoldItalic.ttf) format("truetype");
 }
 
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: "MuliRegular", sans-serif;
-    font-size: 10px;
-}
-
-.container {
-    max-width: 1740px;
-    margin: 0 auto;
-    padding: 0 10px;
-}
-
 .btn--green {
     background-color: #0aa566;
 }
@@ -645,8 +645,8 @@ body {
     flex-direction: column;
     -ms-flex-align: center;
     align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -ms-flex-pack: end;
+    justify-content: end;
     width: 274px;
     height: 205px;
 }
@@ -1560,25 +1560,6 @@ body {
 }
 
 @media screen and (max-width: 1120px) {
-    .header__menu {
-        position: fixed;
-        background-color: #0aa566;
-        z-index: 2;
-        top: 0;
-        right: 0;
-        left: 0;
-        display: none;
-        -ms-flex-direction: column-reverse;
-        flex-direction: column-reverse;
-        -ms-flex-pack: end;
-        justify-content: flex-end;
-        padding-top: 100px;
-    }
-
-    .header__burger-btn {
-        display: block;
-    }
-
     .header__right-block {
         margin-bottom: 55px;
     }
@@ -1630,6 +1611,25 @@ body {
 }
 
 @media screen and (max-width: 585px) {
+    .header__menu {
+        position: fixed;
+        background-color: #0aa566;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        left: 0;
+        display: none;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        padding-top: 100px;
+    }
+
+    .header__burger-btn {
+        display: block;
+    }
+
     .header__personal::after {
         display: none;
     }
@@ -1655,6 +1655,7 @@ body {
 
     .smoothies {
         padding-top: 40px;
+        padding-bottom: 30px;
     }
 
     .smoothies__title {
@@ -1678,14 +1679,18 @@ body {
         height: 160px;
     }
 
+    .smoothies__wrapper {
+        margin-top: 0px;
+    }
+
     .about__btn {
         width: 270px;
-        margin-bottom: 50px;
+        margin-bottom: 5px;
     }
 
     .about__title {
         font-size: 40px;
-        line-height: 50px;
+        line-height: 40px;
     }
 
     .about__list {
@@ -1873,5 +1878,9 @@ body {
     .footer__social {
         margin-top: 0px;
         margin-left: 67px;
+    }
+
+    .payment__list {
+        min-height: 210px;
     }
 }
